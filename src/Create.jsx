@@ -14,7 +14,7 @@ const Create = () => {
 
     setIsPending(true);
 
-    fetch('/api/blogs/', {
+    fetch('https://nodeblogapi.onrender.com/api/blogs', {
       method: 'POST',
       headers: {"Content-Type": "application/json"},
       body: JSON.stringify(blog)

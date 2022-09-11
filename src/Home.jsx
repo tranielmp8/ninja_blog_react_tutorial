@@ -3,7 +3,7 @@ import useFetch from "./useFetch";
 
 const Home = () => {
   //let name = "Mario"
-  const {data: blogs, isPending, error} = useFetch('/api/blogs/')
+  const {data: blogs, isPending, error} = useFetch('https://nodeblogapi.onrender.com/api/blogs')
 
   return (
     <div className="home" >
